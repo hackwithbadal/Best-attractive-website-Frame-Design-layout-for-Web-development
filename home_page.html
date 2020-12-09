@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kits.edu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            background-color: rgb(3, 3, 3,0.8);
+        }
+
+        .lite {
+            display: block;
+            width: 700px;
+            height: 60px;
+            align-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 5px auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 32px;
+        }
+
+        .navbar a {
+            float: left;
+            text-decoration: none;
+            list-style: none;
+            padding: 10px 10px 0px 10px;
+            color: white;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            font-size: 33px;
+        }
+
+        .search_bar input {
+            height: 40px;
+            width: 200px;
+            margin-top: 20px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+        .img-cont{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .img-cont img {
+            height: 900px;
+            width: 1520px;
+        }
+
+        .img-cont h1 {
+            font-size: 45px;
+            color: white;
+            margin-top: -750px;
+            margin-left: 70px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 8.5s steps(30, end)
+        }
+        #award{
+            height: 400px;
+            width: 500px;
+            margin-top: -300px;
+            margin-right: 50px;
+        }
+
+        #para {
+            margin-left: 70px;
+            color: white;
+            word-spacing: 20px;
+            letter-spacing: 5px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        .openButton {
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            background-color: rgb(161, 199, 74);
+            border-radius: 10px;
+            margin-left: 450px;
+            margin-top: 30px;
+            height: 50px;
+            width: 200px;
+            cursor: pointer;
+        }
+
+        .openButton:hover {
+            background-color: rgb(56, 209, 18);
+        }
+
+        .loginPopup {
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        .formPopup {
+            display: none;
+            position: fixed;
+            left: 45%;
+            top: 5%;
+            transform: translate(-50%, 5%);
+            border: 3px solid #999999;
+            z-index: 9;
+        }
+
+        .formContainer {
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        #formh2 {
+            font-size: 30px;
+            color: navy;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .formContainer input[type=text],
+        .formContainer input[type=password],
+        .formContainer input[type=email] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 20px 0;
+            border: none;
+            background: #eee;
+            box-shadow: -1px -1px 3px 3px mediumspringgreen;
+        }
+
+        .formContainer .btn {
+            padding: 12px 20px;
+            border: none;
+            background-color: #8ebf42;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        #btn01 {
+            padding: 5px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: lawngreen;
+            font-size: 30px;
+            width: 130px;
+        }
+
+        #btn01:hover {
+            background-color: rgb(159, 240, 77);
+        }
+
+        #btn02 {
+            padding: 5px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: tomato;
+            font-size: 30px;
+            width: 130px;
+        }
+
+        #btn02:hover {
+            background-color: rgb(207, 51, 51);
+        }
+
+        .mark85 marquee {
+            padding: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: black;
+            scroll-behavior: smooth;
+            font-size: 20px;
+            border: 2px solid lightblue;
+            margin-top: 0px;
+        }
+
+        .mark85 h1 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: gold;
+            font-size: xx-large;
+            margin-top: 100px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo01.jpg" alt="loading" height="75px" width="80px">
+        </div>
+        <div class="lite">
+            <nav class="navbar">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Admition</li>
+                </a>
+                <a href="gallary.html">
+                    <li>Gallary</li>
+                </a>
+                <a href="#">
+                    <li>Placements</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </nav>
+        </div>
+        <div class="search_bar">
+            <input type="text" name="search_bar" id="search" placeholder="     🔍  Search here  ">
+        </div>
+    </div>
+    <hr />
+    <div class="img-cont">
+        <div>
+            <img src="last.jpg" alt="loading">
+            <h1>Welcome to Kavikulguru Institute <br>of Technolgy and Science,Ramtek</h1>
+            <p id="para">Come TO KITS, Sucssses Come With You . . .</p>
+            <input type="button" class="openButton" onclick="openForm()" value="↪Rigister Now">
+            <div class="img-cont">
+                <img src="50-years.png" alt="loading" id="award">
+            </div>
+        </div>
+    </div>
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+            <form class="formContainer">
+                <h2 id="formh2">Enter Your Detail Below</h2>
+                First Name<input type="text" name="#" id="#">
+                Last Name<input type="text" name="#" id="#">
+                Gender:Male<input type="radio" name="#" id="1">Female<input type="radio" name="#" id="2">Other <input
+                    type="radio" name="#" id="3"> <br>
+                E-Mail <input type="email" name="#" id="mail">
+                Mobile Number <input type="text" name="#" id="#">
+                <input type="button" value="Submit" id="btn01">
+                <input type="button" value="Clear" id="btn02">
+            </form>
+        </div>
+    </div>
+    <div class="mark85">
+        <h1>
+            <---New Anouncements--->
+        </h1>
+        <marquee direction="up">🐕Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            sapiente dignissimos iste debitis reprehenderit magnam veniam dolores, aut quia impedit eveniet dolore
+            consectetur minima laborum aspernatur dolor. Corrupti, iure ex!<br>🐩Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptatum obcaecati repellendus facilis enim dolor alias, fuga voluptates
+            corrupti, sapiente quisquam mollitia, dicta nostrum ducimus necessitatibus magnam molestiae accusantium
+            quia similique.<br>🐶Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, tenetur.
+            Recusandae non ullam corrupti similique! Est non cupiditate numquam quos, accusantium nostrum harum.
+            Dignissimos alias reiciendis veritatis exercitationem doloribus aperiam!,<br>🐕‍🦺Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Exercitationem nisi, labore explicabo quos illo minima laboriosam
+            aperiam unde. Sequi, vero id error perspiciatis eveniet nobis dolorum atque nostrum expedita odit.
+        </marquee>
+    </div>
+    <script>
+        var index = 0;
+        var text = 'Welcome to Kavikulguru Institute of Technolgy and Science ,Ramtek';
+        var speed = 30;
+        function textEffect() {
+            if (index < text.length) {
+                document.getElementById("effect")
+                    .innerHTML += text.charAt(index);
+                index++;
+                setTimeout(textEffect, speed);
+            }
+        }
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
